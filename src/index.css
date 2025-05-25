@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+img {
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    color: #fff;
+    width: 100%;
+    padding: 10px 0 10px 10px;
+}
+
+.sidebar {
+    position: fixed;
+    right: 0;
+    z-index: 10;
+    top: 0;
+    background: rgba(0, 0, 0, 0.874);
+    color: #fff;
+    height: 100%;
+    padding: 10px;
+    width: 30%;
+
+}
+
+.sidebar h1 {
+    font-size: 2.2em;
+    padding: 10px 0;
+}
+
+.sidebar i {
+    font-size: 20px;
+    padding: 20px 0;
+    cursor: pointer;
+}
+
+.sidebar h2 {
+    font-size: 1.2em;
+    font-weight: 400;
+    padding: 5px 0;
+}
+
+.sidebar p {
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    color: gray;
+}
+
+.footer i {
+    position: absolute;
+    right: 20px;
+    font-size: 22px;
+    cursor: pointer;
+
+}
+
+.footer h1 {
+    font-size: 2.6em;
+    margin-bottom: 10px;
+}
+
+.footer h2 {
+    font-size: 18px;
+    color: gray;
+    text-transform: uppercase;
+}
+
+.loadingState {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loadingState i {
+    font-size: 3em;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .sidebar {
+        width: 100%;
+        left: 0;
+    }
+
+    .sidebar p {
+        padding-right: 10px;
+    }
+}
