@@ -109,4 +109,11 @@ img {
     .sidebar p {
         padding-right: 10px;
     }
+      .imgContainer{
+        background: #000;
+        height: 100vh;
+    }
+    .imgContainer img{
+        margin: 100px auto;
+    }
 }
